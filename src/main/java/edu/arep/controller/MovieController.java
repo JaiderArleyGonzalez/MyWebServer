@@ -9,7 +9,7 @@ import java.util.HashMap;
 @RequestMapping("/movie")
 public class MovieController {
     private static String apiKey = "1892fc8d";
-    private static ArrayList<String> favorites  = new ArrayList<>();
+    public static ArrayList<String> favorites  = new ArrayList<>();
 
     @GetMapping("/detail")
     public  static String getByName(String name) throws IOException {
